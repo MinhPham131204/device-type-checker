@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-class CheckSysProps {
+namespace CheckSysProps {
 
     /**
      * Check specific flags of QEMU (Android Studio's core emulator).

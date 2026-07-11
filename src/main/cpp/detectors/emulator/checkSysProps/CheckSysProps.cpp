@@ -1,9 +1,9 @@
-#include "check_properties.h"
+#include "CheckSysProps.h"
 #include <sys/system_properties.h>
 #include <algorithm>
 #include <cctype>
 
-namespace CheckProperties {
+namespace CheckSysProps {
 
     /**
      * Read value of a System Property at Native layer.
