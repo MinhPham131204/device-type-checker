@@ -8,6 +8,12 @@ add_library(
         SHARED
 
         core/native_bridge.cpp
+
+        detectors/emulator/checkFileSys/CheckFileSys.cpp
+
+        detectors/emulator/checkSysProps/CheckSysProps.cpp
+
+        detectors/emulator/checkTelephony/CheckTelephony.cpp
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE include)
