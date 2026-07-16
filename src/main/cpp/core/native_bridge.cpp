@@ -2,6 +2,8 @@
 #include <string>
 #include "json.hpp"
 
+#include "../detectors/root_check/root_check.h"
+
 using json = nlohmann::json;
 
 std::string analyzeRisk(int suspicious) {
