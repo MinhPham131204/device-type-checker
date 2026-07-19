@@ -9,6 +9,8 @@ add_library(
 
         core/native_bridge.cpp
 
+        detectors/root_check/root_check.cpp
+
         detectors/root_check/checkFileExist/CheckFileExist.cpp
 
         detectors/root_check/checkInstallPkg/CheckInstallPkg.cpp
