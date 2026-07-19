@@ -16,6 +16,14 @@ add_library(
         detectors/emulator/checkSysProps/CheckSysProps.cpp
 
         detectors/emulator/checkTelephony/CheckTelephony.cpp
+        
+        detectors/root_check/root_check.cpp
+
+        detectors/root_check/checkFileExist/CheckFileExist.cpp
+
+        detectors/root_check/checkInstallPkg/CheckInstallPkg.cpp
+
+        detectors/root_check/checkOsBuild/CheckCustomBuilds.cpp
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE include)
