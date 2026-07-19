@@ -9,6 +9,14 @@ add_library(
 
         core/native_bridge.cpp
 
+        detectors/emulator/emu_checker.cpp
+
+        detectors/emulator/checkFileSys/CheckFileSys.cpp
+
+        detectors/emulator/checkSysProps/CheckSysProps.cpp
+
+        detectors/emulator/checkTelephony/CheckTelephony.cpp
+        
         detectors/root_check/root_check.cpp
 
         detectors/root_check/checkFileExist/CheckFileExist.cpp
