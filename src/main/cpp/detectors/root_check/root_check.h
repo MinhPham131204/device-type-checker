@@ -5,9 +5,6 @@
 
 class RootChecker {
 public:
-    RootChecker(); // constructor
-
-    ~RootChecker(); // destructor
 
     /**
      * main function to make a comprehensive analysis to detect emulator.

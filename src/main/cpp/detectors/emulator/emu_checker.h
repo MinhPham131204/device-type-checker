@@ -8,9 +8,6 @@
  */
 class EmulatorChecker {
 public:
-    EmulatorChecker(); // constructor
-
-    ~EmulatorChecker(); // destructor
 
     /**
      * main function to make a comprehensive analysis to detect emulator.

@@ -44,7 +44,7 @@ namespace CheckSysProps {
         return false;
     }
 
-    bool hasSuspiciousBuildProperties(std::vector<std::string>& evidences) {
+    bool hasSuspiciousBuildProps(std::vector<std::string>& evidences) {
         bool isSuspicious = false;
 
         // check ro.product.board (goldfish, unknown,...)
