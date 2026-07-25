@@ -7,6 +7,7 @@ import com.application.devicechecker.detectors.EmulatorDetector
 import com.application.devicechecker.detectors.RootDetector
 import com.application.devicechecker.utils.ThreatDetail
 import com.application.devicechecker.utils.ThreatReport
+import com.google.gson.GsonBuilder
 
 class SecurityGuard private constructor(
     private val context: Context,
@@ -29,7 +30,7 @@ class SecurityGuard private constructor(
     )
 
     // Executable function
-    fun scanDevice(): ThreatReport {
+    fun scanDevice(): String {
         val detailsList = mutableListOf<ThreatDetail>()
         var risk = false
 
@@ -48,11 +49,15 @@ class SecurityGuard private constructor(
             else -> "ALLOW"
         }
 
-        return ThreatReport(
+        val report = ThreatReport(
             scanTimestamp = System.currentTimeMillis(),
             action = action,
             details = detailsList
         )
+
+        val gson = GsonBuilder().setPrettyPrinting().create()
+
+        return gson.toJson(report)
     }
 
     // Nested Builder Class - Joshua Bloch

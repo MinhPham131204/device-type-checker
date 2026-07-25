@@ -2,6 +2,9 @@
 #include <string>
 #include "json.hpp"
 
+#include "../detectors/emulator/emu_checker.h"
+#include "../detectors/root_check/root_check.h"
+
 using json = nlohmann::json;
 
 std::string analyzeRisk(int suspicious) {
