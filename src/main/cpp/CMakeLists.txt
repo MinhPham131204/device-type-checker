@@ -27,6 +27,7 @@ add_library(
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE include)
+target_link_options(${CMAKE_PROJECT_NAME} PRIVATE "-Wl,-z,max-page-size=16384")
 
 # Link to standard Android lib (logcat)
 find_library(log-lib log)
